@@ -18,5 +18,7 @@ J = 0;
 
 
 % =========================================================================
-
+hypothesis = X*theta;
+sqeErrors = (hypothesis - y).^2;
+J = 1/(2*m) * sum(sqeErrors);
 end
